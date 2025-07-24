@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.form-container{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+    padding: 1rem;
+}
+.notas-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 30px;
+}
+#titulo-error,#cuerpo-error{
+    color: red;
+    display: none;
+}
+#confirm{
+    color: rgb(19, 163, 19);
+    display: none;
+}

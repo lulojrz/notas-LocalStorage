@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <title>Notas</title>
+  </head>
+  <body>
+    <section class="form-container">
+      <h3>Ingrese Nueva nota</h3>
+      <form>
+        <div class="mb-3">
+          <label for="titulo" class="form-label">Titulo</label>
+          <input type="text" class="form-control" id="titulo" />
+          <span id="titulo-error">No puede estar vacio</span>
+        </div>
+        <div class="mb-3">
+          <label for="cuerpo">Cuerpo</label>
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="cuerpo"
+            ></textarea>
+            <label for="floatingTextarea">Comments</label>
+            <span id="cuerpo-error">No puede estar vacio</span>
+          </div>
+        </div>
+        <button type="submit" id="boton" class="btn btn-primary">Enviar</button>
+        <span id="confirm">Recibido ✅</span>
+      </form>
+    </section>
+    <main>
+      <div class="notas-container"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
